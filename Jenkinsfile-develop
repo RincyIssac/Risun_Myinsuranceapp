@@ -11,13 +11,13 @@ pipeline {
         stage('Unit/Integration tests') {
             steps {
                 echo 'Unit/Integration...'
-                bat'c:/Users/Administrator/AppData/Local/Programs/Python/Python39/python.exe'  -m unittest discover -s tests\unit\unittest_users_dao.py -v
+                bat 'c:/Users/Administrator/AppData/Local/Programs/Python/Python39/python.exe  -m unittest discover -s tests\unit\unittest_users_dao.py -v'
             }
         }        
         stage('Acceptance tests') {
             steps {
                 echo 'Acceptance...'
-                bat'c:/Users/Administrator/AppData/Local/Programs/Python/Python39/python.exe'  -m unittest discover -s tests\acceptance\acceptance_api.py -v
+                bat 'c:/Users/Administrator/AppData/Local/Programs/Python/Python39/python.exe  -m unittest discover -s tests\acceptance\acceptance_api.py -v'
             }
         }        
     }
