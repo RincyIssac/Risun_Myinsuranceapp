@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main',url: 'https://github.com/RincyIssac/Risun_Myinsuranceapp.git' 
+                git branch: 'master',url: 'https://github.com/RincyIssac/Risun_Myinsuranceapp.git' 
                 // bat 'rd /s /q "dist"'
                 bat 'dir'
 	        }
