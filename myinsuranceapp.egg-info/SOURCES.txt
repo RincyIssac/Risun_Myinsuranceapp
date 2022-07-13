@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+myinsuranceapp.egg-info/PKG-INFO
+myinsuranceapp.egg-info/SOURCES.txt
+myinsuranceapp.egg-info/dependency_links.txt
+myinsuranceapp.egg-info/requires.txt
+myinsuranceapp.egg-info/top_level.txt
+project/__init__.py
+project/jwt/__init__.py
+project/persistence/__init__.py
+project/persistence/products_dao.py
+project/persistence/users_dao.py
