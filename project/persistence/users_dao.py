@@ -9,7 +9,7 @@ def get_users():
     conn.close()
     return users
 
-
+        
 def get_user(user_id):
     conn = get_db_connection()
     user = conn.execute('SELECT * FROM users WHERE id = ?',
