@@ -31,7 +31,7 @@ pipeline {
                 echo 'Deploying....'
                 withCredentials([usernamePassword(credentialsId: 'Nexus2_credentials', usernameVariable: 'USER', passwordVariable: 'USERPASS')]) {
                 echo "$USER $USERPASS"
-                bat "twine upload  --repository-url http://localhost:8081/repository/hosted-python/ dist/* -u${USER} -p${USERPASS}"
+                bat "twine upload  --repository-url http://localhost:8081/repository/RISUN/ dist/* -u${USER} -p${USERPASS}"
                 }
             }
         }
